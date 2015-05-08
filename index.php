@@ -3,10 +3,9 @@
 * landphp的入口文件
 * @author 彭城岛主
 */
-define('landphp',true);
-define('LAND_PATH', dirname(__FILE__).'/');
+define('LAND_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
 
-require_once './common.php';
+include LAND_PATH.'common.php';
 
 common::application();
 
